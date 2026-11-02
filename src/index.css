@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #17110d;
+  --color-surface: #251c16;
+  --color-surface2: #33271f;
+  --color-line: #4a3a2e;
+  --color-cream: #f4e4cc;
+  --color-muted: #b8a38c;
+  --color-saffron: #f59e0b;
+  --color-saffron-dark: #d97706;
+  --font-display: "Playfair Display", Georgia, serif;
+}
+
+@layer base {
+  * { border-color: var(--color-line); }
+  input { background: var(--color-ink); color: var(--color-cream); }
+  input::placeholder { color: var(--color-muted); }
+  h1, h2 { font-family: var(--font-display); }
+}
